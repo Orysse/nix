@@ -147,7 +147,7 @@
     )
 
     # derivations
-    (callPackage ./packages/sddm-rose-pine.nix {})
+    (callPackage ../../system/packages/sddm-rose-pine.nix {})
 
   ];
 
