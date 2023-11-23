@@ -21,7 +21,7 @@
     ../../user/apps/terminal/alacritty/alacritty.nix
     ../../user/apps/editor/nvim/nvim.nix
     ../../user/apps/utils/default.nix
-    ../../user/apps/browser/qute.nix
+    # ../../user/apps/browser/qute.nix
   ];
 
   colorScheme = inputs.nix-colors.colorSchemes.${theme};
