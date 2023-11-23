@@ -20,6 +20,11 @@
     plugins = with pkgs.vimPlugins; [
 
         {
+            plugin = alpha-nvim;
+            config = toLuaFile ./plugin/alpha.lua;
+        }
+
+        {
           plugin = (nvim-treesitter.withPlugins (p: [
             p.tree-sitter-nix
             p.tree-sitter-vim
