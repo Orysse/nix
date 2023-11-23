@@ -1,8 +1,8 @@
-{ config, pkgs, inputs, ... }:
+{ config, pkgs, inputs, username, ... }:
 
 {
-  home.username = "abelc";
-  home.homeDirectory = "/home/abelc";
+  home.username = username;
+  home.homeDirectory = "/home/${username}";
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
@@ -24,7 +24,7 @@
     ../../user/apps/browser/qute.nix
   ];
 
-  colorScheme = inputs.nix-colors.colorSchemes.everforest;
+  colorScheme = inputs.nix-colors.colorSchemes.${theme};
 
   nixpkgs.config.allowUnfree = true;
 

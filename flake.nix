@@ -15,10 +15,12 @@
 	    # ---- SYSTEM SETTINGS ---- #
         system = "x86_64-linux"; # system arch
         hostname = "Camion-pizza-DGSE"; # hostname
-        profile = "wsl"; # select a profile
+        profile = "master"; # select a profile
         timezone = "Europe/Paris"; # select timezone
         locale = "en_US.UTF-8"; # select locale
 	    username = "abelc";
+
+        theme = "everforest";
 
 	   # ------ OTHER STUFF ------- #
         lib = nixpkgs.lib;
@@ -30,17 +32,21 @@
                 inherit system;
                 modules = [ ./profiles/${profile}/configuration.nix ];
                 specialArgs = { 
-		  inherit hostname;
-		  inherit locale;
-		  inherit timezone;
-		  inherit username;
+		            inherit hostname;
+		            inherit locale;
+		            inherit timezone;
+		            inherit username;
                 };
             };
         };
 
         homeConfigurations = {
             user = home-manager.lib.homeManagerConfiguration {
-                extraSpecialArgs = { inherit inputs; };
+                extraSpecialArgs = { 
+                    inherit inputs;
+                    inherit username;
+                    inherit theme;
+                    };
                 inherit pkgs;
                 modules = [ ./profiles/${profile}/home.nix ];
             };
