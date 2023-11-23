@@ -22,9 +22,9 @@
       v = "nvim";
       ls = "lsd";
       c = "clear";
-      hrc = "nvim ~/.dotfiles/user/home.nix";
+      hrc = "nvim ~/.dotfiles/flake.nix";
       config = "nvim ~/.dotfiles/configuration.nix";
-      rebuild = "sudo nixos-rebuild switch --flake ~/.dotfiles/";
+      rebuild = "sudo nixos-rebuild switch --flake ~/.dotfiles/#system";
       home = "home-manager switch --flake ~/.dotfiles/#user";
     };
     /* prezto = {
