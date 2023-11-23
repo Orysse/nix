@@ -80,8 +80,6 @@ return {
             "neovim/nvim-lspconfig", -- load nvim-lspconfig on BufReadPre (before loading Treesitter on BufReadPost)
             event = "BufReadPre",
         },
-        { 'williamboman/mason.nvim' },
-        { 'williamboman/mason-lspconfig.nvim' },
         {
             "hrsh7th/nvim-cmp",
             event = "InsertEnter", -- load nvim-cmp on InsertEnter; this is ignored(?), as nvim-cmp is loaded with lsp-zero.nvim
