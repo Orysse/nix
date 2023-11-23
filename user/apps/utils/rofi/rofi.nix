@@ -37,7 +37,7 @@
           padding: 0;
           spacing: 0;
 
-          bg: #${base00}a0;
+          bg: #${base00}d0;
           bg-alt: #${base00}d0;
 
           fg: #${base06};
