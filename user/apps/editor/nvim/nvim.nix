@@ -17,7 +17,7 @@
     vimAlias = true;
     coc.enable = false;
 
-    plugins = [
+    plugins = with pkgs.vimPlugins; [
 
         {
           plugin = (nvim-treesitter.withPlugins (p: [
@@ -29,7 +29,7 @@
             p.tree-sitter-json
             p.tree-sitter-c
         ]));
-        config = toLuaFile ./nvim/lugnix-p/treesitter.lua;
+        config = toLuaFile ./nvim/nix-plug/treesitter.lua;
       }
 
     ];
@@ -38,13 +38,6 @@
   home.file."./.config/nvim/" = {
     source = ./nvim;
     recursive = true;
-  };
-
-  # Treesitter is configured as a locally developed module in lazy.nvim
-  # we hardcode a symlink here so that we can refer to it in our lazy config
-  home.file."./.local/share/nvim/nix/nvim-treesitter/" = {
-    recursive = true;
-    source = treesitterWithGrammars;
   };
 
 }
