@@ -29,7 +29,7 @@
             p.tree-sitter-json
             p.tree-sitter-c
         ]));
-        config = toLuaFile ./nvim/nix/treesitter.lua;
+        config = toLuaFile ./nix/treesitter.lua;
       }
 
     ];
