@@ -22,7 +22,7 @@
       nvim-lspconfig
       nvim-cmp
       cmp-nvim-lsp
-      cmp-luasnip
+      cmp_luasnip
       friendly-snippets
 
       {
