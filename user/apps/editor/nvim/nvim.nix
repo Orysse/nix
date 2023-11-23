@@ -21,7 +21,7 @@
 
         {
             plugin = alpha-nvim;
-            config = toLuaFile ./plugin/alpha.lua;
+            config = toLuaFile ./nvim/nix/alpha.lua;
         }
 
         {
@@ -34,7 +34,7 @@
             p.tree-sitter-json
             p.tree-sitter-c
         ]));
-        config = toLua "require('nvim-treesitter.configs').setup";
+        config = toLuaFile ./nvim/nix/treesitter.lua;
       }
 
     ];
