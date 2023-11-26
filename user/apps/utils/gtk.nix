@@ -4,13 +4,13 @@
   gtk = {
     enable = true;
     theme = {
-      name = "Catppuccin-Macchiato-Standard-Mauve-Dark";
-      package = pkgs.catppuccin-gtk.override {
+      name = "Everforest-GTK-Theme";
+      package = ../../../packages/everforest-gtk.nix;/* .override {
         accents = [ "mauve" ];
         size = "standard";
         tweaks = [ ];
-        variant = "macchiato";
-      };
+        variant = "macchiato"; 
+      }; */
     };
   };
 }
