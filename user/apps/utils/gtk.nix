@@ -5,7 +5,7 @@
     enable = true;
     theme = {
       name = "Everforest-GTK-Theme";
-      package = ../../../packages/everforest-gtk.nix;/* .override {
+      package = pkgs.callPackage ../../../packages/everforest-gtk.nix;/* .override {
         accents = [ "mauve" ];
         size = "standard";
         tweaks = [ ];
