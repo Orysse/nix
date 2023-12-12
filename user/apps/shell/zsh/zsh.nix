@@ -26,7 +26,7 @@
       config = "nvim ~/.dotfiles/configuration.nix";
       rebuild = "sudo nixos-rebuild switch --flake ~/.dotfiles/#system";
       home = "home-manager switch --flake ~/.dotfiles/#user";
-      shell = "nix-shell . --run \"zsh\"";
+      shell = "nix-shell --run \"zsh\"";
     };
     /* prezto = {
            enable = true;
