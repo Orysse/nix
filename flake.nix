@@ -20,7 +20,7 @@
         locale = "en_US.UTF-8"; # select locale
 	    username = "abelc";
 
-        theme = "rose-pine";
+        theme = "everforest";
 
 	   # ------ OTHER STUFF ------- #
         lib = nixpkgs.lib;
