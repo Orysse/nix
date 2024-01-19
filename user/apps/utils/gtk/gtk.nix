@@ -1,8 +1,7 @@
 { config, pkgs, ... }:
 
 {
-  programs.dconf.enable = true;
-
+  home.packages = [ pkgs.dconf ];
   gtk = {
     enable = true;
     theme = {
