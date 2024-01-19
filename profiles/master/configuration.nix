@@ -51,7 +51,7 @@
     layout = "us";
     xkbVariant = "";
     enable = true;
-    dpi = 80;
+    dpi = 100;
 
     desktopManager = {
       xterm.enable = false;
