@@ -47,12 +47,11 @@
 
   i18n.defaultLocale = locale;
 
-  hardware.video.hidpi.enable = true;
-
   services.xserver = {
     layout = "us";
     xkbVariant = "";
     enable = true;
+    dpi = 180;
 
     desktopManager = {
       xterm.enable = false;
