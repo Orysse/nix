@@ -174,6 +174,7 @@
   xdg.portal.extraPortals = [
     pkgs.xdg-desktop-portal-gtk
   ];
+  xdg.portal.config.common.default = "*";
 
   fonts.packages = with pkgs; [
     (nerdfonts.override { fonts = [ "IosevkaTerm" "Iosevka" ]; })
