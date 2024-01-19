@@ -18,7 +18,7 @@
       normal_border_color = "#${config.colorScheme.colors.base0D}";
     };
     monitors = {
-      eDP-1 = [
+      eDP-1-1 = [
         "一"
         "二"
         "三"
