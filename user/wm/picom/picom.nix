@@ -29,4 +29,6 @@
   home.file.".config/picom/picom.conf".source = ./picom.conf; */
 
   services.picom.enable = true;
+  services.picom.vSync = true;
+  services.picom.backend = "glx";
 }
