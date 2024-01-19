@@ -129,6 +129,14 @@
     package = config.boot.kernelPackages.nvidiaPackages.stable;
   };
 
+  hardware.nvidia.prime = {
+      sync.enable = true;
+	  # Make sure to use the correct Bus ID values for your system!
+	  intelBusId = "PCI:0:2:0";
+	  nvidiaBusId = "PCI:1:0:0";
+  };
+
+
   environment.shells = with pkgs; [ zsh ];
   users.defaultUserShell = pkgs.zsh;
   programs.zsh.enable = true;
