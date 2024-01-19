@@ -19,7 +19,7 @@
     ../../user/apps/notify/dunst.nix
     ../../user/apps/terminal/alacritty/alacritty.nix
     ../../user/apps/editor/nvim/nvim.nix
-    # ../../user/apps/utils/default.nix
+    ../../user/apps/utils/default.nix
     # ../../user/apps/browser/qute.nix
   ];
 
