@@ -32,6 +32,8 @@
     startupPrograms = [
       "feh --bg-fill /home/abelc/.dotfiles/user/wallpaper/wallpaper.jpg"
       "~/.config/polybar/launch.sh"
+      "xinput set-prop 'Logitech USB Receiver' 'libinput Accel Speed' -0.7"
+      "setxkbmap us intl"
     ];
   };
 }
