@@ -191,7 +191,7 @@
   fonts.packages = with pkgs; [
     (nerdfonts.override { fonts = [ "IosevkaTerm" "Iosevka" ]; })
     rounded-mgenplus
-    estrangelo
+    noto-sans-imperial-aramaic
   ];
 
   # Enable the OpenSSH daemon.
