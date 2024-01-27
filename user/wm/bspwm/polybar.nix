@@ -20,7 +20,7 @@
         font-1 = "Iosevka Nerd Font:style=ExtraBold:size=22;5";
         font-2 = "Iosevka Nerd Font:style=ExtraBold:size=24;6";
         font-3 = "Iosevka Nerd Font:style=ExtraBold:size=26;6";
-        font-4 = "Noto Sans Imperial Aramaic:style=bold:size=13;4";
+        font-4 = "Noto Sans:style=bold:size=13;4";
 
         background = "#e0${base01}";
         foreground = "#${base05}";
