@@ -18,7 +18,7 @@
         profile = "master"; # select a profile
         timezone = "Europe/Paris"; # select timezone
         locale = "en_US.UTF-8"; # select locale
-	    username = "abelc";
+	    username = "axel";
 
         theme = "everforest";
 
