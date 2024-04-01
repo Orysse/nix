@@ -6,8 +6,8 @@
 
 APIKEY=`cat $HOME/.owm-key`
 # if you leave these empty location will be picked based on your ip-adres
-CITY_NAME='Paris'
-COUNTRY_CODE='FR'
+CITY_NAME='Surabaya'
+COUNTRY_CODE='ID'
 # Desired output language
 LANG="en"
 # UNITS can be "metric", "imperial" or "kelvin". Set KNOTS to "yes" if you

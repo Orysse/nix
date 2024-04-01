@@ -16,7 +16,7 @@
         system = "x86_64-linux"; # system arch
         hostname = "Camion-pizza-DGSE"; # hostname
         profile = "master"; # select a profile
-        timezone = "Europe/Paris"; # select timezone
+        timezone = "Asia/Jakarta"; # select timezone
         locale = "en_US.UTF-8"; # select locale
 	    username = "abelc";
 

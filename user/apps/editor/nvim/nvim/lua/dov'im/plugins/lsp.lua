@@ -7,7 +7,15 @@ local lsp_servers = {
     'ccls',
     'pylsp',
     'hls',
-    'rnix'
+    'rnix',
+    'jdtls'
+}
+
+local jdtls_config = {
+    settings = {
+        cmd = {'${pkgs.jdt-language-server}/bin/jdt-language-server'},
+        root_dir = vim.fs.dirname(vim.fs.find({'gradlew', '.git', 'mvnw'}, { upward = true })[1]),
+    },
 }
 
 local lua_ls_config = {
@@ -90,6 +98,9 @@ return {
                 { "rafamadriz/friendly-snippets" },
             },
         },
+        {
+            "mfussenegger/nvim-jdtls"
+        },
     },
 
     config = function ()
@@ -101,6 +112,7 @@ return {
         lsp.configure('pylsp', pylsp_config)
         lsp.configure('hls', hls_config)
         lsp.configure('rnix', rnix_config)
+        lsp.configure('jdtls', jdtls_config)
 
         lsp.setup_servers(lsp_servers)
         lsp.on_attach(on_attach)

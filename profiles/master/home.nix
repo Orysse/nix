@@ -21,6 +21,7 @@
     ../../user/apps/terminal/alacritty/alacritty.nix
     ../../user/apps/editor/nvim/nvim.nix
     ../../user/apps/utils/default.nix
+     ../../user/apps/language/default.nix
     # ../../user/apps/browser/qute.nix
   ];
 
@@ -39,6 +40,8 @@
     python311Packages.python-lsp-server
     haskell-language-server
     rnix-lsp
+    # java-language-server
+    jdt-language-server
 
     #apps
     alacritty
@@ -47,14 +50,26 @@
     dunst
     feh
     firefox
+    # jetbrains.idea-ultimate
+    kazam
     lsd
     neofetch
+    obs-studio
+    osu-lazer
+    openresolv
+    openshot-qt
+    openvpn
     pavucontrol
     polybar
+    protonvpn-cli
+    protonvpn-gui
     rofi
     steam
     swww
+    vlc
     xmobar
+    scrot
+    speedtest-cli
     spotify
 
     #utils
